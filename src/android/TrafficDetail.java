@@ -16,10 +16,6 @@ public class TrafficDetail extends CordovaPlugin{
 		
 	}
 	
-	public void initialize(CordovaInterface cordova, CordovaWebView webView) {
-        super.initialize(cordova, webView);
-    }
-	
 	public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
 		JSONObject r = new JSONObject();
 		if (action.equals("bytesSent")) {
