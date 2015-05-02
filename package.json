@@ -1,0 +1,22 @@
+{
+  "name": "cordova-traffic-detail",
+  "version": "1.0.0",
+  "description": "Cordova Traffic Detail Plugin",
+  "cordova": {
+    "id": "cordova-traffic-detail",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nitishkumar71/TrafficDetail.git"
+  },
+  "keywords": [
+    "cordova",
+    "Traffic",
+    "cordova-android"
+  ],
+  "author": "Nitishkumar Singh",
+  "license": "Apache 2.0"
+}
