@@ -15,7 +15,7 @@ var TrafficDetail= {
             }]*/
 
 	 getBytesSent : function(successCallback, errorCallback,uid) {
-			cordova.exec(successCallback, errorCallback, "TrafficDetail", "bytesSent", []);
+			cordova.exec(successCallback, errorCallback, "TrafficDetail", "getDetails", []);
 	 }
 }
 

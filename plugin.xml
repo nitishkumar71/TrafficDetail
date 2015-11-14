@@ -41,19 +41,21 @@
     </platform>
 -->
 
-    <!-- wp8
+    <!-- wp8  -->
     <platform name="wp8">
         <config-file target="config.xml" parent="/*">
-            <feature name="Device">
-                <param name="wp-package" value="Device"/>
+            <feature name="TrafficDetail">
+                <param name="wp-package" value="TrafficDetail"/>
             </feature>
         </config-file>
-
-        <config-file target="Properties/WMAppManifest.xml" parent="/Deployment/App/Capabilities">
-            <Capability Name="ID_CAP_IDENTITY_DEVICE" />
-        </config-file>
-
-        <source-file src="src/wp/Device.cs" />
+        <source-file src="src/wp/TrafficDetail.cs" />
     </platform>
- -->
+	
+	 <!-- windows -->
+    <platform name="windows">
+        <js-module src="src/windows/TrafficDetailProxy.js" name="TrafficDetailProxy">
+            <merges target="" />
+        </js-module>
+    </platform>
+
 </plugin>
