@@ -23,5 +23,6 @@ function errorFunction(error) {
     alert(" Error: " + error);
 }
 ```
+
 ####Note: Plugin is only supported for android and windows platform
 
