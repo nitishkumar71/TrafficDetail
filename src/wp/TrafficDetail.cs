@@ -25,7 +25,6 @@ namespace WPCordovaClassLib.Cordova.Commands
                                         0,
                                         0); //not supported in windows
 
-                //Debug.WriteLine("Not connected to Internet");
             }
             else
             {
@@ -36,11 +35,9 @@ namespace WPCordovaClassLib.Cordova.Commands
                                         DataStats.BytesReceived,
                                         0); //not supported in windows
 
-                //Debug.WriteLine("Data Usage "+DataStats.BytesSent);
             }
-            //string upperCase = JSON.JsonHelper.Deserialize<string[]>(options)[0].ToUpper();            
+            
             res = "{" + res + "}";
-            //Debug.WriteLine("Result::" + res);
             DispatchCommandResult(new PluginResult(PluginResult.Status.OK, res));
         }
     }

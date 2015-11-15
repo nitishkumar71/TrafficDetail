@@ -1,4 +1,3 @@
-
 /**
  * Get Traffic Detail info
  *
@@ -6,14 +5,6 @@
  * @param {Function} errorCallback The function to call when there is an error getting the heading data. (OPTIONAL)
  */
 var TrafficDetail= {
-            /*[{                  // and this array of custom arguments to create our entry
-                "title": title,
-                "description": notes,
-                "eventLocation": location,
-                "startTimeMillis": startDate.getTime(),
-                "endTimeMillis": endDate.getTime()
-            }]*/
-
 	 getBytesSent : function(successCallback, errorCallback,uid) {
 			cordova.exec(successCallback, errorCallback, "TrafficDetail", "getDetails", []);
 	 }

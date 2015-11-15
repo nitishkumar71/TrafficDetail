@@ -17,7 +17,6 @@ public class TrafficDetail extends CordovaPlugin {
 		JSONObject r = new JSONObject();
 		try {
 			
-			//JSONObject arg_object = args.getJSONObject(0);
 			if (action.equals("getDetails")) {
 				int uid=android.os.Process.myUid();
 				long temp = this.getSentBytes(uid);

@@ -19,17 +19,16 @@ module.exports = {
 			roaming: connectivityNS.TriStates.doNotCare,
 			shared: connectivityNS.TriStates.doNotCare
 		};
-        //var networkUsage = connectionProfile.getAttributedNetworkUsageAsync(startTime, currTime, networkUsageStates);
-        //var networkUsage = connectionProfile.getNetworkUsageAsync(startTime,currTime);
+		
 		if (connectionProfile === null) {
                 WinJS.log && WinJS.log("Not connected to Internet\n\r", "sample", "status");
         }
         else {
-			//connectionProfile.getAttributedNetworkUsageAsync(startTime, currTime, networkUsageStates)
+
 		    connectionProfile.getNetworkUsageAsync(startTime, currTime, granularity, networkUsageStates)
                 .then(function (networkUsages) {
         for (var i = 0; i < networkUsages.size; i++) {
-		//result="bytes sent "+networkUsages[i].bytesSent;
+
             result =
 		    {
 		        bytesSent: networkUsages[i].bytesSent,
@@ -50,7 +49,7 @@ module.exports = {
 		        BytesReceived: 0,
 		        PacketReceived: 0   //not supported in windows
 		    };
-        //WinJS.log && WinJS.log("An error has occurred: " + error, "sample", "error");
+
 		successCallback(result);
     });
         }       
