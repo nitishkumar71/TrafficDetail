@@ -1,34 +1,9 @@
 package org.apache.cordova.traffic;
 
-import java.net.HttpURLConnection;
-import java.net.InetAddress;
-import java.net.NetworkInterface;
-import java.net.URL;
-import java.util.Collections;
-
-import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
-import org.apache.cordova.CordovaInterface;
-import org.apache.cordova.CordovaWebView;
+import org.apache.cordova.CordovaPlugin;
 import org.json.JSONArray;
-import org.json.JSONException;
-
-import android.content.Context;
-import android.net.wifi.WifiConfiguration;
-import android.net.wifi.WifiInfo;
-import android.net.DhcpInfo;
-import android.net.wifi.WifiManager;
-import android.content.Intent;
-import android.content.IntentFilter;
-import android.provider.Settings;
-
-import java.util.Arrays;
-import java.util.Enumeration;
-import java.util.List;
-import java.util.Map;
-
 import org.json.JSONObject;
-
 import android.net.TrafficStats;
 
 public class TrafficDetail extends CordovaPlugin {
